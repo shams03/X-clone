@@ -1,0 +1,27 @@
+{
+  "name": "twitterserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "start": "node build/index",
+    "dev": "tsc-watch --onSuccess \" npm start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "prisma": "^6.5.0",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@prisma/client": "^6.5.0",
+    "axios": "^1.8.4",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
